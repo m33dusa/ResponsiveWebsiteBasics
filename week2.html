@@ -1,96 +1,21 @@
-<!html>
+<html>
 <meta charset="utf-8">
 <meta name="viewport" content="width-device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<style>
-
-.title{
-  padding:15px;
-  text-align: center;
-  color:#708090;
-}
-
-hr{
-  border:1px dotted #B0C4DE;
-  border-radius:5px;
-  margin:10px;
-}
-
-nav{
-  font-size:13px;
-  padding:10px;
-  margin-bottom:10px;
-}
-
-.img{
-  position:relative;
-  display:inline-block;
-  width:100%;
-}
-
-p{
-  font-size:1.2em;
-  width:100%;
-}
-
-
-img:hover{
-  width:50%;
-  position:absolute;
-  z-index:4;
-  float:left;
-  background-color:white;
-
-}
-
-li{
-  font-size:1.4em;
-}
-
-.navDec {
-  position:relative;
-  color:rgb(112,128,144);
-  font-size:1.5em;
-  text-shadow: rgba(0,0,1) -1px -1px 1px;
-  padding:10px;
-  transition: all 1.2s;
-}
-.navDec:hover{
-  rgb(92,75,57);
-  font-size:2.1em;
-  top:-20px;
-  left:12px;
-  text-shadow:rgba(0,0,0.2) 8px 8px 5px;
-}
-
-aside{
-  float:right;
-  margin: 0 1%;
-  width:25%;
-}
-
-section{
-  width:75%;
-}
-
-h3{
-  font-size:12px;
-  font-weight:normal;
-}
-
-  </style>
-
+  
 <head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>RESPONSIVE WEBSITE BASICS: CODE WITH HTML, CSS & JAVASCRIPT by: University of London & Goldsmiths</title>
   <h1 class="title">RESPONSIVE WEBSITE BASICS: CODE WITH HTML, CSS & JAVASCRIPT</h1>
+  
+  <!--nav bar -->
   <nav style="text-align:center">
     &nbsp;
-  <a href="#about" target="_blank" class="navDec">ABOUT</a>
+  <a href="index.html" target="_blank" class="navDec">ABOUT</a>
   &nbsp;
   <a href="index.html" target="_blank"
   class="navDec">HTML</a>
   &nbsp;
-  <a href="Assignment2.html" target="_blank" class="navDec">CSS</a>
+  <a href="week2.html" target="_blank" class="navDec">CSS</a>
   &nbsp;
   <a href="#week3" target="_blank" class="navDec">JAVASCRIPT</a>
   &nbsp;
@@ -104,6 +29,8 @@ h3{
 <body>
 <h2 style="fontfont-size: 12px; margin-top:50px" class="week1"> <i>WEEK 2 - CSS</i></h2>
 <div>
+  
+   <!--main content -->
   <body>
     <ol>
       <li>CSS</li>
@@ -112,11 +39,15 @@ h3{
       <aside class="sideBar"><img class="img"
           src="http://tanjawi.com/wp-content/uploads/2019/03/css3-syntax-1.png" target="_blank">
       </aside>
+      
+    <!--section 1 -->
       <section>
       <li>Anatomy of a CSS</li>
       <p><i><a href="https://www.w3schools.com/cssref/css_selectors.asp"
          target="_blank">Selectors</a> -</i> Selectors are patterns used to target HTML elements you want to style/modify.</p>
       </section>
+      
+    <!--section 2 -->
       <section>
       <p><i><a href="https://htmldog.com/references/css/properties/"
         target="_blank">Property</a> -</i> Properties along with some value input create a delcration.</p>
@@ -127,9 +58,11 @@ h3{
           <area shape="default" coords="" href="#" alt=""></p>
           <img class="img" src="https://ironion.com/wp-content/uploads/2015/06/cssanatomy3.png"></img>
         </aside>
-        <section>
-    <li>Pseudo-Class Selectors & Other Selectors</li>
-    <p>Pseudo class selectors are CSS selectors with a colon preceding them. You can learn more about Pseudo Class Selectors on
+        
+   <!--section 3 -->
+      <section>
+      <li>Pseudo-Class Selectors & Other Selectors</li>
+      <p>Pseudo class selectors are CSS selectors with a colon preceding them. You can learn more about Pseudo Class Selectors on
       <a href="https://css-tricks.com/pseudo-class-selectors/" target="_blank">CSS-Tricks</a>.
       In addition to the pseudo-class selectors, there are numerous other types of selectors, including parent ("&lt"),
       child ("&gt") and descendant (blank space) selectors and a universal selector(*{}).
@@ -140,6 +73,8 @@ h3{
       <aside class="sideBar"><img class="img"
         src="http://html.net.linux17.wannafindserver.dk/tutorials/css/figure008.gif"></img>
       </aside>
+ 
+  <!--section 4 -->    
       <section>
       <li>The Box Model</li>
       <p> By default, the web browser wraps every HTML element in a rectangular box, the CSS box model.
@@ -153,6 +88,8 @@ h3{
         <img class="img"
       src="https://internetingishard.com/html-and-css/advanced-positioning/css-z-index-c87ef0.png">
       </aside>
+  
+  <!--section 5 -->    
       <section>
       <ul>
         <li style="font-size:18px"><strong>Fixed</strong> - The fixed position removes content from the normal flow of the page and are not affected by scrolling. </li>
@@ -175,6 +112,8 @@ h3{
       <p>Twitter Bootstrap or simply <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> is an open-source HTML, CSS and JavaScript Framework that is used in front-end web development to easily create mobile-first, responsive websites quickly. </p>
     </ol>
   </body>
+
+   <!--footer -->
   <footer>
   <hr>
 <h3>This web page was created for academic purposes, as part of the <i>Responsive Website Basics: Code with HTML, CSS, and Javascript</i> offered by the <a href="https://www.gold.ac.uk" target="_blank"> University of London Goldsmiths</a> on <a href="https://www.coursera.org/browse" target="_blank">Coursera</a>. The course if one of six courses offered in the <a href="https://www.coursera.org/specializations/website-development?" target="_blank">Responsive Website Development and Design</a> specialization. &copy; 2019 <a href="https://m33dusa.github.io/ZainabJalloh/" target="_blank">Zainab Jalloh</a>.<h3>
