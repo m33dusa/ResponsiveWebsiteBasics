@@ -1,0 +1,182 @@
+<!html>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+
+.title{
+  padding:15px;
+  text-align: center;
+  color:#708090;
+}
+
+hr{
+  border:1px dotted #B0C4DE;
+  border-radius:5px;
+  margin:10px;
+}
+
+nav{
+  font-size:13px;
+  padding:10px;
+  margin-bottom:10px;
+}
+
+.img{
+  position:relative;
+  display:inline-block;
+  width:100%;
+}
+
+p{
+  font-size:1.2em;
+  width:100%;
+}
+
+
+img:hover{
+  width:50%;
+  position:absolute;
+  z-index:4;
+  float:left;
+  background-color:white;
+
+}
+
+li{
+  font-size:1.4em;
+}
+
+.navDec {
+  position:relative;
+  color:rgb(112,128,144);
+  font-size:1.5em;
+  text-shadow: rgba(0,0,1) -1px -1px 1px;
+  padding:10px;
+  transition: all 1.2s;
+}
+.navDec:hover{
+  rgb(92,75,57);
+  font-size:2.1em;
+  top:-20px;
+  left:12px;
+  text-shadow:rgba(0,0,0.2) 8px 8px 5px;
+}
+
+aside{
+  float:right;
+  margin: 0 1%;
+  width:25%;
+}
+
+section{
+  width:75%;
+}
+
+h3{
+  font-size:12px;
+  font-weight:normal;
+}
+
+  </style>
+
+<head>
+  <title>RESPONSIVE WEBSITE BASICS: CODE WITH HTML, CSS & JAVASCRIPT by: University of London & Goldsmiths</title>
+  <h1 class="title">RESPONSIVE WEBSITE BASICS: CODE WITH HTML, CSS & JAVASCRIPT</h1>
+  <nav style="text-align:center">
+    &nbsp;
+  <a href="#about" target="_blank" class="navDec">ABOUT</a>
+  &nbsp;
+  <a href="index.html" target="_blank"
+  class="navDec">HTML</a>
+  &nbsp;
+  <a href="Assignment2.html" target="_blank" class="navDec">CSS</a>
+  &nbsp;
+  <a href="#week3" target="_blank" class="navDec">JAVASCRIPT</a>
+  &nbsp;
+  <a href="#assgn" target="_blank" class="navDec">ASSIGNMENTS</a>
+  &nbsp;
+  <a href="#qz" target="_blank" class="navDec">QUIZ-REVIEW</a>
+  </nav>
+  <hr></hr>
+  <hr></hr>
+</head>
+<body>
+<h2 style="fontfont-size: 12px; margin-top:50px" class="week1"> <i>WEEK 2 - CSS</i></h2>
+<div>
+  <body>
+    <ol>
+      <li>CSS</li>
+      <p><i><a href="https://atom.io" target="_blank">CSS</a> -</i> stands for Cascading Style Sheets, it is a derived language that controls how webpages look on the browser.
+      HTML, CSS and Javascript make up web technologies.</p>
+      <aside class="sideBar"><img class="img"
+          src="http://tanjawi.com/wp-content/uploads/2019/03/css3-syntax-1.png" target="_blank">
+      </aside>
+      <section>
+      <li>Anatomy of a CSS</li>
+      <p><i><a href="https://www.w3schools.com/cssref/css_selectors.asp"
+         target="_blank">Selectors</a> -</i> Selectors are patterns used to target HTML elements you want to style/modify.</p>
+      </section>
+      <section>
+      <p><i><a href="https://htmldog.com/references/css/properties/"
+        target="_blank">Property</a> -</i> Properties along with some value input create a delcration.</p>
+      <p><i><a href="http://www.barebones.com/products/textwrangler/"
+        target="_blank">Value</a> -</i> The value is simply, the desired trait you want your HTML element to embody.</p>
+        </section>
+        <aside class="sideBar"><img class="img"
+          <area shape="default" coords="" href="#" alt=""></p>
+          <img class="img" src="https://ironion.com/wp-content/uploads/2015/06/cssanatomy3.png"></img>
+        </aside>
+        <section>
+    <li>Pseudo-Class Selectors & Other Selectors</li>
+    <p>Pseudo class selectors are CSS selectors with a colon preceding them. You can learn more about Pseudo Class Selectors on
+      <a href="https://css-tricks.com/pseudo-class-selectors/" target="_blank">CSS-Tricks</a>.
+      In addition to the pseudo-class selectors, there are numerous other types of selectors, including parent ("&lt"),
+      child ("&gt") and descendant (blank space) selectors and a universal selector(*{}).
+      <p>Selectors can be combined, nested, merged and they can inherit the properties of other selectors.
+      There is a preference hierarchy to selectors, your HTML element will take on the value of the most specific css indicator.
+      The CSS preference hierarchy goes as follows: Style, ID, Class/Pseudo-Class and # of Elements.</p>
+      </section>
+      <aside class="sideBar"><img class="img"
+        src="http://html.net.linux17.wannafindserver.dk/tutorials/css/figure008.gif"></img>
+      </aside>
+      <section>
+      <li>The Box Model</li>
+      <p> By default, the web browser wraps every HTML element in a rectangular box, the CSS box model.
+        The box has the following customizable CSS properties: height, width, border, margins, padding
+        and content. According to the box model margins are cumulative. The universal selector is used
+        to standardize settings across different viewports.</p>
+      </section>
+      <li>Positioning</li>
+      <p>The position property determines the position of content on the page and utilizes the following values:</p>
+      <aside class="sideBar">
+        <img class="img"
+      src="https://internetingishard.com/html-and-css/advanced-positioning/css-z-index-c87ef0.png">
+      </aside>
+      <section>
+      <ul>
+        <li style="font-size:18px"><strong>Fixed</strong> - The fixed position removes content from the normal flow of the page and are not affected by scrolling. </li>
+        <li style="font-size:18px"><strong>Static</strong> - The default browser position places content accoding to the normal flow of the document.</li>
+        <li style="font-size:18px"><strong>Relative</strong> - The relative position describes the new placement of content relative to its normal/default position.</li>
+        <li style="font-size:18px"><strong>Absolute</strong> - The absolute position does not exist in the normal document flow. It automatically sets at the top-left corner of the page.</li>
+        <li style="font-size:18px"><strong>Sticky</strong> - The sticky position combines elements of the relative and fixed position.</li>
+        <li style="font-size:18px"><strong>Float</strong> - In addition to the regular positioning methods, the float method gravitates content to the "right", "left", "center", "top" or "bottom" of the page</li>
+        <li style="font-size:18px"><strong>Z-Index</strong> - The z-index is another determines the layer of a content. Higher z-index items are placed above lower indexed items.</li>
+      </ul></section><br>
+      <li>Media Queries</li>
+      <p>The @media querie is used to target styles at specific media, usually, screen or print. The @media helps optimize content layout on different screen sizes,
+        sizes ranging from mobile screens to large desktop screens.</p>
+      <aside class="sideBar">
+      <img class="img"
+      src="https://mailbakery.com/wp-content/uploads/2016/04/The-6-Best-Practices-for-Responsive-HTML-Email-Design_Layout.jpg"></img></aside>
+      <li>Responsive Design</li>
+      <p>Responsive website design uses fluid, proportion-based grids, flexible images and CSS media queries to adapt a site's layout to the viewing environment. Responsive layouts use the 12-column grid model and uses % to determine the width of each grid.</p>
+      <li>Twitter Bootstrap</li>
+      <p>Twitter Bootstrap or simply <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> is an open-source HTML, CSS and JavaScript Framework that is used in front-end web development to easily create mobile-first, responsive websites quickly. </p>
+    </ol>
+  </body>
+  <footer>
+  <hr>
+<h3>This web page was created for academic purposes, as part of the <i>Responsive Website Basics: Code with HTML, CSS, and Javascript</i> offered by the <a href="https://www.gold.ac.uk" target="_blank"> University of London Goldsmiths</a> on <a href="https://www.coursera.org/browse" target="_blank">Coursera</a>. The course if one of six courses offered in the <a href="https://www.coursera.org/specializations/website-development?" target="_blank">Responsive Website Development and Design</a> specialization. &copy; 2019 <a href="https://m33dusa.github.io/ZainabJalloh/" target="_blank">Zainab Jalloh</a>.<h3>
+</footer>
+</html>
